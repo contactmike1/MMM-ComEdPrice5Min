@@ -1,18 +1,18 @@
 'use strict';
 
 
-Module.register("MMM-ComEdPrice", {
+Module.register("MMM-ComEdPrice5Min", {
 
     result: [],
     // Default module config.
     defaults: {
-        url: 'https://hourlypricing.comed.com/api?type=currenthouraverage',
+	url: 'https://hourlypricing.comed.com/api?type=5minutefeed',
         fadeSpeed: 2000,
         updateInterval: 30 * 60 * 1000, // every 30 minutes
     },
 
     getStyles: function() {
-        return ["MMM-ComEdPrice.css"];
+        return ["MMM-ComEdPrice5Min.css"];
     },
 
     start: function() {
@@ -32,6 +32,8 @@ Module.register("MMM-ComEdPrice", {
         }
 
         wrapper.className = 'medium bright';
+
+this.result.length=1;
 
         if (this.result.length > 0){
             this.result.forEach(function(pwr) {
