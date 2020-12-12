@@ -1,5 +1,5 @@
 /* Magic Mirror
- * Module: ComEd real time pricing
+ * Module: ComEdPrice5Min 
  *
  */
 var NodeHelper = require('node_helper');
@@ -8,7 +8,7 @@ var request = require('request');
 module.exports = NodeHelper.create({
 
   start: function () {
-    console.log('MMM-ComEdPrice helper started ...');
+    console.log('MMM-ComEdPrice5Min helper started ...');
   },
 
   getData: function (url) {
@@ -19,7 +19,7 @@ module.exports = NodeHelper.create({
               var result = JSON.parse(body);
               self.sendSocketNotification('POWER_DATA_RESULT', result);
           } else {
-              console.log("MMM-ComEdPrice : Could not load data.");
+              console.log("MMM-ComEdPrice5Min : Could not load data.");
           }
       });
   },
