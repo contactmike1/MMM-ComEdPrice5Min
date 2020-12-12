@@ -3,7 +3,7 @@ MagicMirror module to get the current ComEd 5-Minute Price data for customers. T
 
 
 ## How it Works
-This module uses the standard 5 minute API from ComEd, which returns all the 5-minute prices from the last 24 hours. While the original forked code is already written to loop through all the returned data, I simply use the first value and discard the rest of data. You could modify this to do something with the 24 hours of data that is returned from the API, or modify the API call for any timeframe you desire. By defaut, it will only display the most recent price. For more data on the ComEd API, see here: https://hourlypricing.comed.com/hp-api/
+This module uses the standard 5-minute API from ComEd, which returns all the 5-minute prices from the last 24 hours. While the original forked code is already written to loop through all the returned data, I simply use the first value and discard the rest of data. You could modify this to do something with the 24 hours of data that is returned from the API, or modify the API call for any timeframe you desire. By defaut, it will only display the most recent price. For more data on the ComEd API, see here: https://hourlypricing.comed.com/hp-api/
 
 
 ## API
